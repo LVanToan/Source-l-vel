@@ -2,19 +2,21 @@
 
 @section('content')
     <main class="login-form">
-        <div class="container">
-            <div class="row justify-content-center">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($users as $user)
+    <div class="container">
+        <h4 class="text-center mt-3">Danh sách user</h4>
+
+        <!-- Bảng danh sách user -->
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th>id</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach($users as $user)
                             <tr>
                                 <th>{{ $user->id }}</th>
                                 <th>{{ $user->name }}</th>
@@ -26,9 +28,26 @@
                                 </th>
                             </tr>
                         @endforeach
-                    </tbody>
-                </table>
-            </div>
-        </div>
+            </tbody>
+        </table>
+
+        <!-- Phân trang -->
+        <nav>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Lập trình web © 01/2024
+    </div>
     </main>
 @endsection
+
+

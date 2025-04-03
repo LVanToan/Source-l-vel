@@ -1,113 +1,87 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f8f9fa; /* Màu nền sáng */  
+    color: #333; /* Màu chữ tối */  
+    margin: 0;  
+    padding: 0;  
+}  
+  
+.container {  
+    margin: auto; /* Căn giữa */  
+}  
 
-body {
-    background-color: #f4f4f4;
-    text-align: center;
-}
+.card {  
+    border-radius: 8px; /* Bo góc cho thẻ */  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng cho thẻ */  
+    overflow: hidden; /* Ẩn phần tràn ra ngoài */  
+}  
 
-.container {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-}
+.card-header {  
+    background-color: blue; /* Màu nền cho header */  
+    color: #fff; /* Màu chữ trắng */  
+    padding: 20px 0; /* Khoảng cách trên và dưới */  
+    text-align: center; /* Căn giữa chữ trong header */  
+}  
 
-/* Thanh điều hướng */
-nav ul {
-    list-style: none;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-}
+.card-body {  
+    padding: 30px; /* Khoảng cách trong body */  
+}  
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
+.form-group {  
+    margin-bottom: 25px; /* Khoảng cách giữa các nhóm input */  
+}  
 
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
+label {  
+    font-weight: bold; /* Đậm cho label */  
+    display: block; /* Giúp label đứng trên một dòng */  
+    margin-bottom: 5px; /* Khoảng cách dưới label */  
+}  
 
-nav ul li a.active {
-    color: blue;
-}
 
-/* Form đăng nhập */
-.login-box {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
 
-h2 {
-    margin-bottom: 15px;
-}
+input:focus {  
+    border-color: #343a40; /* Màu đường biên khi focus */  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng khi focus */  
+}  
 
-.input-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
+.text-danger {  
+    color: #e3342f; /* Màu đỏ cho thông báo lỗi */  
+}  
 
-.input-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
+.d-grid {  
+    margin-top: 30px; /* Khoảng cách trên nút đăng ký */  
+}  
 
-.input-group input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
+.btn {  
+    background-color: blue; /* Màu nền cho nút */  
+    color: #fff; /* Màu chữ trắng */  
+    border: none; /* Bỏ đường viền */  
+    padding: 15px; /* Đệm cho nút */  
+    border-radius: 4px; /* Bo góc cho nút */  
+    text-transform: uppercase; /* Chữ in hoa */  
+    cursor: pointer; /* Con trỏ khi hover */  
+    font-size: 16px; /* Kích thước chữ trong nút */  
+    transition: background-color 0.3s; /* Hiệu ứng chuyển động cho nút */  
+}  
 
-.remember-me {
-    text-align: left;
-    margin-bottom: 10px;
-}
+.btn:hover {  
+    background-color: orange; /* Màu nền khi hover */  
+}  
 
-.forgot-password {
-    display: block;
-    text-align: left;
-    margin-bottom: 15px;
-    color: blue;
-    text-decoration: none;
-}
+.already-account {  
+    display: block; /* Hiển thị trên dòng mới */  
+    text-align: center; /* Căn giữa */  
+    margin-top: 15px; /* Khoảng cách trên */  
+    color: #343a40; /* Màu chữ */  
+    text-decoration: none; /* Bỏ gạch chân */  
+}  
 
-.forgot-password:hover {
-    text-decoration: underline;
-}
+.already-account:hover {  
+    text-decoration: underline; /* Gạch chân khi hover */  
+}  
 
-/* Nút đăng nhập */
-.btn {
-    width: 100%;
-    padding: 10px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: darkblue;
-}
-
-/* Footer */
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-}
+footer {  
+    text-align: center; /* Căn giữa footer */  
+    margin-top: 20px; /* Khoảng cách trên */  
+    color: #616161; /* Màu chữ nhạt */  
+}  

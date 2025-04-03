@@ -1,87 +1,87 @@
 body {  
     font-family: Arial, sans-serif;  
-    background-color: #f8f9fa; /* Màu nền sáng */  
-    color: #333; /* Màu chữ tối */  
+    background-color: #f8f9fa;
+    color: #333; 
     margin: 0;  
     padding: 0;  
 }  
   
 .container {  
-    margin: auto; /* Căn giữa */  
+    margin: auto;  
 }  
 
 .card {  
-    border-radius: 8px; /* Bo góc cho thẻ */  
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng cho thẻ */  
-    overflow: hidden; /* Ẩn phần tràn ra ngoài */  
+    border-radius: 8px;  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);   
+    overflow: hidden;  
 }  
 
 .card-header {  
-    background-color: blue; /* Màu nền cho header */  
-    color: #fff; /* Màu chữ trắng */  
-    padding: 20px 0; /* Khoảng cách trên và dưới */  
-    text-align: center; /* Căn giữa chữ trong header */  
+    background-color: blue;  
+    color: #fff;  
+    padding: 20px 0;  
+    text-align: center;  
 }  
 
 .card-body {  
-    padding: 30px; /* Khoảng cách trong body */  
+    padding: 30px;  
 }  
 
 .form-group {  
-    margin-bottom: 25px; /* Khoảng cách giữa các nhóm input */  
+    margin-bottom: 25px;   
 }  
 
 label {  
-    font-weight: bold; /* Đậm cho label */  
-    display: block; /* Giúp label đứng trên một dòng */  
-    margin-bottom: 5px; /* Khoảng cách dưới label */  
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; 
 }  
 
 
 
 input:focus {  
-    border-color: #343a40; /* Màu đường biên khi focus */  
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng khi focus */  
+    border-color: #343a40;   
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);   
 }  
 
 .text-danger {  
-    color: #e3342f; /* Màu đỏ cho thông báo lỗi */  
+    color: #e3342f;  
 }  
 
 .d-grid {  
-    margin-top: 30px; /* Khoảng cách trên nút đăng ký */  
+    margin-top: 30px;   
 }  
 
 .btn {  
-    background-color: blue; /* Màu nền cho nút */  
-    color: #fff; /* Màu chữ trắng */  
-    border: none; /* Bỏ đường viền */  
-    padding: 15px; /* Đệm cho nút */  
-    border-radius: 4px; /* Bo góc cho nút */  
-    text-transform: uppercase; /* Chữ in hoa */  
-    cursor: pointer; /* Con trỏ khi hover */  
-    font-size: 16px; /* Kích thước chữ trong nút */  
-    transition: background-color 0.3s; /* Hiệu ứng chuyển động cho nút */  
+    background-color: blue;   
+    color: #fff; 
+    border: none;  
+    padding: 15px;  
+    border-radius: 4px;   
+    text-transform: uppercase;   
+    cursor: pointer; 
+    font-size: 16px;   
+    transition: background-color 0.3s;  
 }  
 
 .btn:hover {  
-    background-color: orange; /* Màu nền khi hover */  
+    background-color: orange;  
 }  
 
 .already-account {  
-    display: block; /* Hiển thị trên dòng mới */  
-    text-align: center; /* Căn giữa */  
-    margin-top: 15px; /* Khoảng cách trên */  
-    color: #343a40; /* Màu chữ */  
-    text-decoration: none; /* Bỏ gạch chân */  
+    display: block; 
+    text-align: center;  
+    margin-top: 15px;  
+    color: #343a40;  
+    text-decoration: none;  
 }  
 
 .already-account:hover {  
-    text-decoration: underline; /* Gạch chân khi hover */  
+    text-decoration: underline;   
 }  
 
 footer {  
-    text-align: center; /* Căn giữa footer */  
-    margin-top: 20px; /* Khoảng cách trên */  
-    color: #616161; /* Màu chữ nhạt */  
+    text-align: center;  
+    margin-top: 20px;  
+    color: #616161;   
 }  

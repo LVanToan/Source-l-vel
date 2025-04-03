@@ -5,13 +5,15 @@
     <div class="container">
         <h4 class="text-center mt-3">Danh sách user</h4>
 
-        <!-- Bảng danh sách user -->
+       
         <table class="table table-bordered">
             <thead class="table-light">
                 <tr>
                     <th>id</th>
                     <th>Username</th>
                     <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
                     <th>Thao tác</th>
                 </tr>
             </thead>
@@ -21,6 +23,8 @@
                                 <th>{{ $user->id }}</th>
                                 <th>{{ $user->name }}</th>
                                 <th>{{ $user->email }}</th>
+                                <th>{{ $user->phone }}</th>
+                                <th>{{ $user->address }}</th>
                                 <th>
                                     <a href="{{ route('user.readUser', ['id' => $user->id]) }}">View</a> |
                                     <a href="{{ route('user.updateUser', ['id' => $user->id]) }}">Edit</a> |
@@ -31,7 +35,7 @@
             </tbody>
         </table>
 
-        <!-- Phân trang -->
+       
         <nav>
             <ul class="pagination">
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -43,10 +47,11 @@
         </nav>
     </div>
 
-    <!-- Footer -->
-    <div class="footer">
+   
+    <footer style="text-align: center; padding: 20px;">
         Lập trình web © 01/2024
-    </div>
+    </footer>
+        
     </main>
 @endsection
 

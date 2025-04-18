@@ -7,6 +7,7 @@ use Session;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * CRUD User controller
@@ -148,5 +149,10 @@ class CrudUserController extends Controller
         Auth::logout();
 
         return Redirect('login');
+    }
+
+    public function users(): BelongsToMany
+    {
+        return $this->belongsToMany(User::class, 'user_role');
     }
 }
